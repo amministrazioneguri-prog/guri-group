@@ -1,0 +1,69 @@
+<section class="admin">
+  <div class="container">
+    <div class="admin-header">
+      <h1>Guri Group Admin</h1>
+       <button class="logout-btn" (click)="logout()">Logout</button>
+    </div>
+   
+    <!-- TABS -->
+    <div class="tabs">
+      <button (click)="activeTab = 'cars'" [class.active]="activeTab === 'cars'">Auto</button>
+
+      <button (click)="activeTab = 'houses'" [class.active]="activeTab === 'houses'">
+        Immobili
+      </button>
+    </div>
+
+    <!-- ================= AUTO ================= -->
+    <div *ngIf="activeTab === 'cars'" class="tab-content">
+      <h2>Gestione Auto</h2>
+
+      <div class="form">
+        <input [(ngModel)]="newCar.title" placeholder="Titolo auto" />
+        <textarea [(ngModel)]="newCar.desc" placeholder="Descrizione"></textarea>
+
+        <input type="file" (change)="onFileSelected($event, 'car')" />
+
+        <button (click)="addCar()">Aggiungi Auto</button>
+      </div>
+
+      <div class="list">
+        <div class="card" *ngFor="let car of cars">
+          <img [src]="car.img" />
+          <h3>{{ car.title }}</h3>
+          <p>{{ car.desc }}</p>
+
+          <div class="actions">
+            <button (click)="deleteCar(car.id)">Elimina</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= IMMOBILI ================= -->
+    <div *ngIf="activeTab === 'houses'" class="tab-content">
+      <h2>Gestione Immobili</h2>
+
+      <div class="form">
+        <input [(ngModel)]="newHouse.title" placeholder="Titolo immobile" />
+        <textarea [(ngModel)]="newHouse.desc"></textarea>
+
+        <input type="file" (change)="onFileSelected($event, 'house')" />
+
+        <button (click)="addHouse()">Aggiungi Immobile</button>
+      </div>
+
+      <div class="list">
+        <div class="card" *ngFor="let house of houses">
+          <img [src]="house.img" />
+          <h3>{{ house.title }}</h3>
+          <p>{{ house.desc }}</p>
+
+          <div class="actions">
+            <button (click)="deleteHouse(house.id)">Elimina</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

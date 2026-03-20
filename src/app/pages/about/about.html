@@ -1,0 +1,137 @@
+<section class="about-hero">
+
+  <div class="container hero-content">
+
+    <span class="hero-label">GURI GROUP</span>
+
+    <h1>
+      {{ 'ABOUT.HERO_TITLE' | translate }}
+    </h1>
+
+    <p>
+      {{ 'ABOUT.HERO_PARAGRAPH' | translate }}
+    </p>
+
+  </div>
+
+</section>
+
+<section class="about-intro section">
+
+  <div class="container intro-grid">
+
+    <div class="intro-text">
+
+      <h2>
+        {{ 'ABOUT.INTRO_TITLE' | translate }}
+      </h2>
+
+      <p>
+        {{ 'ABOUT.INTRO_PARAGRAPH1' | translate }}
+      </p>
+
+      <p>
+        {{ 'ABOUT.INTRO_PARAGRAPH2' | translate }}
+      </p>
+
+    </div>
+
+    <div class="intro-image">
+
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c">
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about-story section">
+
+  <div class="container story-grid">
+
+    <div class="story-image">
+
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab">
+
+    </div>
+
+    <div class="story-text">
+
+      <h2>{{ 'ABOUT.STORY_TITLE' | translate }}</h2>
+
+      <p>
+        {{ 'ABOUT.STORY_PARAGRAPH1' | translate }}
+      </p>
+
+      <p>
+        {{ 'ABOUT.STORY_PARAGRAPH2' | translate }}
+      </p>
+
+      <p>
+        {{ 'ABOUT.STORY_PARAGRAPH3' | translate }}
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about-values section">
+
+  <div class="container">
+
+    <div class="values-header">
+
+      <h2>{{ 'ABOUT.VALUES_TITLE' | translate }}</h2>
+
+      <p>
+        {{ 'ABOUT.VALUES_PARAGRAPH' | translate }}
+      </p>
+
+    </div>
+
+    <div class="values-grid">
+
+      <div class="value-card">
+
+        <h3>{{ 'ABOUT.VALUES_PROFESSIONALITY' | translate }}</h3>
+
+      </div>
+
+      <div class="value-card">
+
+        <h3>{{ 'ABOUT.VALUES_RELIABILITY' | translate }}</h3>
+
+      </div>
+
+      <div class="value-card">
+
+        <h3>{{ 'ABOUT.VALUES_QUALITY' | translate }}</h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="about-cta">
+
+  <div class="container cta-box">
+
+    <h2>
+      {{ 'ABOUT.CTA_TITLE' | translate }}
+    </h2>
+
+    <a class="btn-primary" routerLink="/contatti">
+      {{ 'ABOUT.CTA_BUTTON' | translate }}
+    </a>
+
+  </div>
+
+</section>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,191 @@
+/* ===================== RESET BASE ===================== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* ===================== LAYOUT STICKY ===================== */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+}
+
+/* ===================== CONTAINER ===================== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ===================== FOOTER ===================== */
+.footer {
+  position: relative;
+  color: white;
+  padding: 100px 20px 40px;
+  overflow: hidden;
+
+  margin-top: auto;
+  isolation: isolate;
+}
+
+/* ===================== BACKGROUND ===================== */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(rgba(15, 60, 74, 0.92), rgba(15, 60, 74, 0.96)),
+    url("https://images.unsplash.com/photo-1497366216548-c627a92ad1ab");
+
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.05);
+  z-index: -2;
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.25);
+
+  z-index: -1;
+}
+
+/* ===================== FOOTER CONTENT ===================== */
+.footer-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===================== LOGO ===================== */
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+
+  transition: all .3s ease;
+}
+
+/* effetto visibilità logo */
+.footer-logo img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.4));
+}
+
+/* ===================== GRID ===================== */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+/* ===================== COLONNE ===================== */
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* ===================== LISTA ===================== */
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+/* ===================== LINK ===================== */
+.footer a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* hover usa accent separato */
+.footer a:hover {
+  color: #ff9800;
+}
+
+.footer a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background: #ff9800;
+  transition: width 0.3s;
+}
+
+.footer a:hover::after {
+  width: 100%;
+}
+
+/* ===================== FOOTER BOTTOM ===================== */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 25px;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* ===================== HOVER ===================== */
+.footer-col {
+  transition: transform 0.4s ease;
+}
+
+.footer-col:hover {
+  transform: translateY(-3px);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 1000px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 80px 20px 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo img {
+    height: 36px;
+  }
+}

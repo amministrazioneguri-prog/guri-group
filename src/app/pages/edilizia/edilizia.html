@@ -1,0 +1,185 @@
+<!-- ===================== HERO EDILIZIA ===================== -->
+<section class="hero-edilizia">
+  <div class="container">
+    <h1>{{ 'EDILIZIA.HERO_TITLE' | translate }}</h1>
+    <p>{{ 'EDILIZIA.HERO_DESC' | translate }}</p>
+    <a class="btn-primary" routerLink="/contatti">
+      {{ 'EDILIZIA.HERO_BUTTON' | translate }}
+    </a>
+  </div>
+</section>
+
+<!-- ===================== SERVIZI ===================== -->
+<section class="servizi-edilizia section">
+  <div class="container">
+    <h2>{{ 'EDILIZIA.SERVICES_TITLE' | translate }}</h2>
+
+    <div class="servizi-grid">
+      <div class="servizio-card">
+        <div class="img-wrapper">
+          <img [src]="'img/edilizia8.jpeg'" />
+        </div>
+        <div class="card-content">
+          <h3>{{ 'EDILIZIA.SERVICES_LIST.RISTRUTTURAZIONI' | translate }}</h3>
+          <p>{{ 'EDILIZIA.SERVICES_LIST.RISTRUTTURAZIONI_DESC' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="servizio-card">
+        <div class="img-wrapper">
+          <img [src]="'img/edilizia9.jpeg'" />
+        </div>
+        <div class="card-content">
+          <h3>{{ 'EDILIZIA.SERVICES_LIST.NUOVE_COSTRUZIONI' | translate }}</h3>
+          <p>{{ 'EDILIZIA.SERVICES_LIST.NUOVE_COSTRUZIONI_DESC' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="servizio-card">
+        <div class="img-wrapper">
+          <img [src]="'img/edilizia7.jpeg'" />
+        </div>
+        <div class="card-content">
+          <h3>{{ 'EDILIZIA.SERVICES_LIST.MANUTENZIONE' | translate }}</h3>
+          <p>{{ 'EDILIZIA.SERVICES_LIST.MANUTENZIONE_DESC' | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="approfondimento-edilizia section">
+  <div class="container">
+    <div class="info-row">
+      <div class="info-text">
+        <h2>{{ 'EDILIZIA.ABOUT_TITLE' | translate }}</h2>
+        <p>{{ 'EDILIZIA.ABOUT_DESC1' | translate }}</p>
+        <p>{{ 'EDILIZIA.ABOUT_DESC2' | translate }}</p>
+      </div>
+      <div class="info-image">
+        <img [src]="'img/edilizia7.jpeg'" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTFOLIO ===================== -->
+<section class="portfolio-edilizia section">
+  <div class="container">
+    <h2>{{ 'EDILIZIA.PORTFOLIO_TITLE' | translate }}</h2>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <img [src]="'img/edilizia5.jpeg'" />
+        <div class="overlay">
+          <h3>{{ 'EDILIZIA.PORTFOLIO_LIST.PROGETTO1_TITLE' | translate }}</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img [src]="'img/edilizia6.jpeg'" />
+        <div class="overlay">
+          <h3>{{ 'EDILIZIA.PORTFOLIO_LIST.PROGETTO2_TITLE' | translate }}</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img [src]="'img/edilizia4.jpeg'" />
+        <div class="overlay">
+          <h3>{{ 'EDILIZIA.PORTFOLIO_LIST.PROGETTO3_TITLE' | translate }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GALLERIA ===================== -->
+<section class="galleria-edilizia section">
+  <div class="container">
+    <h2>Galleria Progetti</h2>
+
+    <div class="galleria-grid">
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia1.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia10.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia2.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <video autoplay muted loop playsinline>
+            <source src="img/edilizia_video2.mp4" />
+          </video>
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia3.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia11.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia4.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia5.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia12.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <img [src]="'img/edilizia13.jpeg'" />
+        </div>
+      </div>
+
+      <div class="galleria-card">
+        <div class="media">
+          <video autoplay muted loop playsinline>
+            <source src="img/edilizia_video3.mp4" />
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ===================== CTA ===================== -->
+<section class="cta-edilizia">
+  <div class="container">
+    <h2>{{ 'EDILIZIA.CTA_TITLE' | translate }}</h2>
+    <a class="btn-primary" routerLink="/contatti">
+      {{ 'EDILIZIA.CTA_BUTTON' | translate }}
+    </a>
+  </div>
+</section>

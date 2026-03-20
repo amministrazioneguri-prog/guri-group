@@ -1,0 +1,278 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "REAL_ESTATE": "Real Estate",
+    "RENT": "Car Rental",
+    "CONSTRUCTION": "Construction",
+    "CONTACT": "Contact"
+  },
+  "BUTTONS": {
+    "DISCOVER_SERVICES": "Discover services",
+    "CONTACT_US": "Contact us",
+    "LEARN_MORE": "Learn more"
+  },
+  "HERO": {
+    "TITLE": "Complete solutions for construction, real estate and mobility",
+    "SUBTITLE": "Guri Group Impresa, officially established in 2023 but with roots dating back to the early 2000s, offers integrated services in construction and real estate, ensuring professionalism, quality and concrete solutions for every need."
+  },
+  "SERVICES": {
+    "TITLE": "Our services",
+    "SUBTITLE": "Integrated solutions tailored to every need.",
+    "IMMOBILIARE": {
+      "TITLE": "Real Estate",
+      "DESC": "Full management of construction, renovation and direct property sales with complete quality control."
+    },
+    "RENT": {
+      "TITLE": "Car Rental",
+      "DESC": "Flexible car rental service with daily, weekly and monthly options."
+    },
+    "CONSTRUCTION": {
+      "TITLE": "Construction",
+      "DESC": "Complete construction services with turnkey solutions."
+    }
+  },
+  "ABOUT": {
+    "HERO_TITLE": "A company built on experience, growth and vision",
+    "HERO_PARAGRAPH": "Guri Group Impresa, officially established in 2023, has its roots in the early 2000s as a construction company specialized in building works.",
+    "INTRO_TITLE": "Growth and expertise",
+    "INTRO_PARAGRAPH1": "Over the years, the company has expanded its expertise in construction, systems and window/door installation sectors.",
+    "INTRO_PARAGRAPH2": "The company is composed of specialized professionals able to manage every phase of the project, from technical design to final execution.",
+    "STORY_TITLE": "Our vision",
+    "STORY_PARAGRAPH1": "The creation of Guri Group represents a step toward the future, with the goal of offering complete and professional services.",
+    "STORY_PARAGRAPH2": "We follow every project through all its phases, ensuring quality, coordination and reliable results.",
+    "STORY_PARAGRAPH3": "We operate in construction, real estate and mobility with a practical and client-oriented approach.",
+    "VALUES_TITLE": "Our values",
+    "VALUES_PARAGRAPH": "The principles that guide every Guri Group activity.",
+    "VALUES_PROFESSIONALITY": "Technical expertise and attention to detail.",
+    "VALUES_RELIABILITY": "Reliability and transparency in every project.",
+    "VALUES_QUALITY": "High standards and long-lasting results.",
+    "CTA_TITLE": "Let’s talk about your project",
+    "CTA_BUTTON": "Contact us"
+  },
+  "PROPERTIES": {
+    "TITLE": "Featured properties",
+    "SUBTITLE": "Discover some of the real estate opportunities available through Guri Group.",
+    "PROPERTY1": {
+      "TITLE": "Modern apartment",
+      "PLACE": "Milan"
+    },
+    "PROPERTY2": {
+      "TITLE": "Independent villa",
+      "PLACE": "Lake Garda"
+    },
+    "PROPERTY3": {
+      "TITLE": "Renovated house",
+      "PLACE": "Verona"
+    }
+  },
+  "CARS": {
+    "TITLE": "Available cars",
+    "SUBTITLE": "Some of the vehicles available in our rental service.",
+    "CAR1": "BMW 3 Series",
+    "CAR2": "Audi A6",
+    "CAR3": "Mercedes C-Class"
+  },
+  "CTA": {
+    "TITLE": "Do you need more information about our services?"
+  },
+  "CONTACT": {
+    "HERO_TITLE": "Contact us – Guri Group",
+    "HERO_DESC": "Do you need information about our services? Our team is ready to support you at every stage of your project.",
+    "HERO_BUTTON": "Send request",
+    "FORM_TITLE": "Request information",
+    "FORM_FIELDS": {
+      "NAME": "Name",
+      "NAME_PLACEHOLDER": "Your name",
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "Your email",
+      "PHONE": "Phone",
+      "PHONE_PLACEHOLDER": "Phone number",
+      "SERVICE": "Service of interest",
+      "SERVICE_PLACEHOLDER": "Select a service",
+      "SERVICE_OPTIONS": {
+        "IMMOBILIARE": "Real Estate",
+        "EDILIZIA": "Construction",
+        "RENT_AUTO": "Car Rental",
+        "ALTRO": "Other"
+      },
+      "REQUEST_TYPE": "Request type",
+      "REQUEST_OPTIONS": {
+        "INFO": "Information",
+        "QUOTE": "Quote",
+        "APPOINTMENT": "Appointment"
+      },
+      "MESSAGE": "Message",
+      "MESSAGE_PLACEHOLDER": "Write your request here..."
+    },
+    "FORM_BUTTON": "Send request",
+    "FORM_SUCCESS": "Message sent successfully. We will get back to you soon.",
+    "FORM_ERROR": "An error occurred. Please try again later.",
+    "INFO_TITLE": "Guri Group",
+    "INFO_DESC": "Professional services in construction, real estate and car rental.",
+    "INFO_EMAIL": "Email",
+    "INFO_PHONE": "Phone",
+    "INFO_ADDRESS": "Address",
+    "INFO_ADDRESS_AMMINISTRATIVE": "Administrative headquarters",
+    "SERVICES_TITLE": "Our services",
+    "SERVICES_LIST": [
+      "Real estate services",
+      "Construction and renovations",
+      "Car rental"
+    ]
+  },
+  "RENT_AUTO": {
+    "HERO_TITLE": "Guri Rent",
+    "HERO_DESC": "Flexible car rental service developed to meet growing market demand.",
+    "HERO_BUTTON": "Book a car",
+    "SERVICES_TITLE": "Our services",
+    "SERVICES_LIST": [
+      {
+        "TITLE": "Short-term rental",
+        "DESC": "Daily or weekly rental."
+      },
+      {
+        "TITLE": "Long-term rental",
+        "DESC": "Flexible monthly solutions."
+      },
+      {
+        "TITLE": "Premium cars",
+        "DESC": "Reliable and comfortable vehicles."
+      }
+    ],
+    "PORTFOLIO_TITLE": "Available vehicles",
+    "PORTFOLIO_LIST": [
+      {
+        "TITLE": "Vehicle 1",
+        "DESC": "Compact city car."
+      },
+      {
+        "TITLE": "Vehicle 2",
+        "DESC": "SUV for travel."
+      },
+      {
+        "TITLE": "Vehicle 3",
+        "DESC": "Premium car."
+      }
+    ],
+    "CTA_TITLE": "Book your car today",
+    "CTA_BUTTON": "Contact us"
+  },
+  "EDILIZIA": {
+    "HERO_TITLE": "Construction – Guri Group",
+    "HERO_DESC": "Complete construction services, from systems to final realization.",
+    "HERO_BUTTON": "Request a quote",
+    "SERVICES_TITLE": "Our services",
+    "SERVICES_LIST": {
+      "RISTRUTTURAZIONI": "Renovations",
+      "RISTRUTTURAZIONI_DESC": "Complete renovation works.",
+      "NUOVE_COSTRUZIONI": "New constructions",
+      "NUOVE_COSTRUZIONI_DESC": "Building new properties.",
+      "MANUTENZIONE": "Maintenance",
+      "MANUTENZIONE_DESC": "Ordinary and extraordinary works."
+    },
+    "ABOUT_TITLE": "Complete construction company",
+    "ABOUT_DESC1": "Guri Group provides everything needed for a complete construction service.",
+    "ABOUT_DESC2": "Supply, installation and certified processes guaranteed.",
+    "PORTFOLIO_TITLE": "Recent projects",
+    "PORTFOLIO_LIST": {
+      "PROGETTO1_TITLE": "Renovation",
+      "PROGETTO1_DESC": "Full renovation project.",
+      "PROGETTO2_TITLE": "New building",
+      "PROGETTO2_DESC": "Residential construction.",
+      "PROGETTO3_TITLE": "Redevelopment",
+      "PROGETTO3_DESC": "Existing building upgrade."
+    },
+    "CTA_TITLE": "Let’s talk about your construction project",
+    "CTA_BUTTON": "Contact us"
+  },
+  "IMMOBILIARE": {
+    "HERO_TITLE": "Guri Real Estate",
+    "HERO_DESC": "Complete management of real estate processes from construction to direct sales.",
+    "HERO_BUTTON": "Request information",
+    "STATS": [
+      {
+        "VALUE": "+120",
+        "LABEL": "Managed properties"
+      },
+      {
+        "VALUE": "98%",
+        "LABEL": "Satisfied clients"
+      },
+      {
+        "VALUE": "+10 years",
+        "LABEL": "Experience"
+      }
+    ],
+    "SERVICES_TITLE": "Our services",
+    "SERVICES_LIST": [
+      {
+        "TITLE": "Sales",
+        "DESC": "Full assistance in property sales.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      },
+      {
+        "TITLE": "Rentals",
+        "DESC": "Rental management.",
+        "IMG": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+      },
+      {
+        "TITLE": "Valuations",
+        "DESC": "Property evaluation services.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      }
+    ],
+    "PORTFOLIO_TITLE": "Recent projects",
+    "PORTFOLIO_LIST": [
+      {
+        "TITLE": "Project 1",
+        "DESC": "Renovated apartments.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      },
+      {
+        "TITLE": "Project 2",
+        "DESC": "Modern villas.",
+        "IMG": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+      },
+      {
+        "TITLE": "Project 3",
+        "DESC": "Commercial spaces.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      }
+    ],
+    "VALUES_TITLE": "Why choose Guri Group",
+    "VALUES_LIST": [
+      {
+        "TITLE": "Reliability",
+        "DESC": "Professionalism and transparency.",
+        "ICON": ""
+      },
+      {
+        "TITLE": "Experience",
+        "DESC": "Industry expertise.",
+        "ICON": ""
+      },
+      {
+        "TITLE": "Support",
+        "DESC": "Full assistance.",
+        "ICON": ""
+      }
+    ],
+    "CTA_TITLE": "Let’s talk about your real estate project",
+    "CTA_BUTTON": "Contact us"
+  },
+  "FOOTER": {
+    "COMPANY_TITLE": "Guri Group",
+    "COMPANY_DESC": "Company operating in construction, real estate and car rental sectors.",
+    "SERVICES_TITLE": "Services",
+    "SERVICES_LIST": [
+      "Real Estate",
+      "Car Rental",
+      "Construction"
+    ],
+    "CONTACT_TITLE": "Contact",
+    "CONTACT_EMAIL": "Email: info@gurigroup.it",
+    "CONTACT_PHONE": "Phone: +39",
+    "COPYRIGHT": "© 2026 Guri Group Srl"
+  }
+}

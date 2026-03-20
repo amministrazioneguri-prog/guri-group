@@ -1,0 +1,130 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* BACKGROUND GURI */
+  background:
+    linear-gradient(135deg, #154f61, #154f61c7),
+    url('/img/edilizia1.jpeg') center/cover no-repeat;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* effetto luce */
+.login-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.08), transparent 60%);
+}
+
+/* ================= BOX ================= */
+.login-box {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(14px);
+
+  padding: 45px 35px;
+  border-radius: 20px;
+  text-align: center;
+  width: 320px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+
+  z-index: 2;
+
+  animation: fadeUp 0.8s ease;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* ================= TITLE ================= */
+.login-box h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ================= SUBTEXT ================= */
+.sub {
+  color: #cbd5f5;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* ================= INPUT ================= */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+
+  background: rgba(255,255,255,0.1);
+  color: white;
+
+  outline: none;
+  transition: all 0.3s;
+}
+
+.login-box input::placeholder {
+  color: #cbd5f5;
+}
+
+.login-box input:focus {
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 3px rgba(14,165,233,0.25);
+}
+
+/* ================= BUTTON ================= */
+.login-box button {
+  width: 100%;
+  padding: 13px;
+
+  border-radius: 12px;
+  border: none;
+
+  cursor: pointer;
+  font-weight: 600;
+
+  background: linear-gradient(135deg, #154f61, #154f61b3);
+  color: white;
+
+  transition: all 0.3s;
+}
+
+.login-box button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* ================= ERROR ================= */
+.error {
+  color: #fecaca;
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

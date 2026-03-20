@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* ===================== GLOBAL ===================== */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #1e293b;
+  background: #f5f7fb;
+  scroll-behavior: smooth;
+}
+
+/* ===================== HERO ===================== */
+.about-hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: white;
+
+  background:
+    linear-gradient(120deg, #154f61, #154f61b7),
+    url("/img/about.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* effetto traslucido */
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(0,0,0,0.15);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+}
+
+.hero-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.85;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.about-hero h1 {
+  font-size: clamp(32px, 5vw, 54px);
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.about-hero p {
+  font-size: clamp(16px, 1.4vw, 20px);
+  line-height: 1.7;
+  color: rgba(255,255,255,0.9);
+}
+
+/* ===================== INTRO / STORY ===================== */
+.intro-grid,
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding: 100px 20px;
+}
+
+.intro-text h2,
+.story-text h2 {
+  color: #154f61; /* MATCH NAVBAR */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.intro-text p,
+.story-text p {
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.intro-image img,
+.story-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.intro-image img:hover,
+.story-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 55px rgba(0,0,0,0.12);
+}
+
+/* ===================== VALUES ===================== */
+.about-values {
+  background: #f8fafc;
+  padding: 100px 20px;
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.values-header h2 {
+  font-size: 34px;
+  color: #154f61; /* MATCH NAVBAR */
+  margin-bottom: 10px;
+}
+
+.values-header p {
+  color: #64748b;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD PIÙ PREMIUM */
+.value-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #eef2f7;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: all 0.45s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.value-card h3 {
+  color: #154f61; /* MATCH NAVBAR */
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* ===================== CTA ===================== */
+.about-cta {
+  padding: 120px 20px;
+}
+
+.cta-box {
+  background: linear-gradient(135deg, #154f61, #154f61ab);
+  color: white;
+  padding: 60px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.cta-box h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* bottone coerente */
+.btn-primary {
+  display: inline-block;
+  background: #ff9800;
+  color: white;
+  padding: 16px 38px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.45s ease;
+}
+
+.btn-primary:hover {
+  background: #ffb74d;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 900px) {
+  .intro-grid,
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-hero h1 {
+    font-size: 28px;
+  }
+
+  .intro-text h2,
+  .story-text h2 {
+    font-size: 26px;
+  }
+
+  .cta-box {
+    padding: 40px 25px;
+  }
+}

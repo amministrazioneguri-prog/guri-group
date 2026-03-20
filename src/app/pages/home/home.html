@@ -1,0 +1,144 @@
+<section class="hero">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1>{{ 'HERO.TITLE' | translate }}</h1>
+      <p>{{ 'HERO.SUBTITLE' | translate }}</p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" (click)="scrollToServices()">
+          {{ 'BUTTONS.DISCOVER_SERVICES' | translate }}
+        </a>
+        <a class="btn-secondary" routerLink="/contatti">
+          {{ 'BUTTONS.CONTACT_US' | translate }}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services" #services>
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ 'SERVICES.TITLE' | translate }}</h2>
+      <p>{{ 'SERVICES.SUBTITLE' | translate }}</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" routerLink="/immobiliare">
+        <div class="service-icon">
+          <img [src]="'img/home-icon-silhouette.png'" alt="Immobiliare">
+        </div>
+        <h3>{{ 'SERVICES.IMMOBILIARE.TITLE' | translate }}</h3>
+        <p>{{ 'SERVICES.IMMOBILIARE.DESC' | translate }}</p>
+      </div>
+
+      <div class="service-card" routerLink="/edilizia">
+        <div class="service-icon">
+          <img [src]="'img/crane.png'" alt="Edilizia">
+        </div>
+        <h3>{{ 'SERVICES.CONSTRUCTION.TITLE' | translate }}</h3>
+        <p>{{ 'SERVICES.CONSTRUCTION.DESC' | translate }}</p>
+      </div>
+
+
+      
+      <div class="service-card" routerLink="/rent-auto">
+        <div class="service-icon">
+          <img [src]="'img/sedan.png'" alt="Rent Auto">
+        </div>
+        <h3>{{ 'SERVICES.RENT.TITLE' | translate }}</h3>
+        <p>{{ 'SERVICES.RENT.DESC' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section about">
+  <div class="container about-grid">
+    <div class="about-image">
+      <img [src]="'img/home4.jpeg'" alt="Chi siamo">
+    </div>
+
+    <div class="about-text">
+      <h2>{{ 'ABOUT.INTRO_TITLE' | translate }}</h2>
+      <p>{{ 'ABOUT.INTRO_PARAGRAPH1' | translate }}</p>
+      <p>{{ 'ABOUT.INTRO_PARAGRAPH2' | translate }}</p>
+
+      <a class="btn-primary" routerLink="/chi-siamo">
+        {{ 'BUTTONS.LEARN_MORE' | translate }}
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section properties">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ 'PROPERTIES.TITLE' | translate }}</h2>
+      <p>{{ 'PROPERTIES.SUBTITLE' | translate }}</p>
+    </div>
+
+    <div class="property-grid">
+      <div class="property-card">
+        <img [src]="'img/home1.jpeg'" alt="Appartamento">
+        <div class="property-info">
+          <h3>{{ 'PROPERTIES.PROPERTY1.TITLE' | translate }}</h3>
+          <p>{{ 'PROPERTIES.PROPERTY1.PLACE' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="property-card">
+        <img [src]="'img/home2.jpeg'" alt="Villa">
+        <div class="property-info">
+          <h3>{{ 'PROPERTIES.PROPERTY2.TITLE' | translate }}</h3>
+          <p>{{ 'PROPERTIES.PROPERTY2.PLACE' | translate }}</p>
+        </div>
+      </div>
+
+      <div class="property-card">
+        <img [src]="'img/home3.jpeg'" alt="Casa">
+        <div class="property-info">
+          <h3>{{ 'PROPERTIES.PROPERTY3.TITLE' | translate }}</h3>
+          <p>{{ 'PROPERTIES.PROPERTY3.PLACE' | translate }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cars">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ 'CARS.TITLE' | translate }}</h2>
+      <p>{{ 'CARS.SUBTITLE' | translate }}</p>
+    </div>
+
+    <div class="car-grid">
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="BMW Serie 3">
+        <h3>{{ 'CARS.CAR1' | translate }}</h3>
+      </div>
+
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753" alt="Audi A6">
+        <h3>{{ 'CARS.CAR2' | translate }}</h3>
+      </div>
+
+      <div class="car-card">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" alt="Mercedes Classe C">
+        <h3>{{ 'CARS.CAR3' | translate }}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <h2>{{ 'CTA.TITLE' | translate }}</h2>
+      <a class="btn-primary" routerLink="/contatti">
+        {{ 'BUTTONS.CONTACT_US' | translate }}
+      </a>
+    </div>
+  </div>
+</section>

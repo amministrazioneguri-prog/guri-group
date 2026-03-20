@@ -1,0 +1,80 @@
+<!-- ===================== HERO RENT AUTO ===================== -->
+<section class="hero-auto">
+  <div class="container">
+    <h1>{{ 'RENT_AUTO.HERO_TITLE' | translate }}</h1>
+    <p>{{ 'RENT_AUTO.HERO_DESC' | translate }}</p>
+    <a class="btn-primary" routerLink="/contatti">{{ 'RENT_AUTO.HERO_BUTTON' | translate }}</a>
+  </div>
+</section>
+
+<!-- ===================== SERVIZI RENT AUTO ===================== -->
+<section class="servizi-auto section">
+  <div class="container">
+    <h2>{{ 'RENT_AUTO.SERVICES_TITLE' | translate }}</h2>
+    <div class="servizi-grid">
+      <div class="servizio-card" *ngFor="let service of rentAutoServices">
+        <div class="img-wrapper">
+          <img [src]="service.img" [alt]="service.TITLE | translate" />
+        </div>
+        <h3>{{ service.TITLE | translate }}</h3>
+        <p>{{ service.DESC | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PORTFOLIO RENT AUTO (DINAMICO FIREBASE) ===================== -->
+<section class="portfolio-auto section">
+  <div class="container">
+    <h2>{{ 'RENT_AUTO.PORTFOLIO_TITLE' | translate }}</h2>
+
+    <div class="portfolio-grid">
+
+      @if (cars$ | async; as cars) {
+
+        <!-- SE CI SONO DATI DA FIREBASE -->
+        @if (cars.length > 0) {
+          @for (car of cars; track car) {
+            <div class="portfolio-card">
+              <div class="img-wrapper">
+                <img [src]="car.img" />
+              </div>
+
+              <h3>{{ car.title }}</h3>
+              <p>{{ car.desc }}</p>
+
+              <a class="btn-contact" [routerLink]="['/contatti']">
+                Contattaci
+              </a>
+            </div>
+          }
+        }
+
+        <!-- FALLBACK -->
+        @if (cars.length === 0) {
+          @for (car of rentAutoPortfolio; track car) {
+            <div class="portfolio-card">
+              <div class="img-wrapper">
+                <img [src]="car.img" [alt]="car.TITLE | translate" />
+              </div>
+
+              <h3>{{ car.TITLE | translate }}</h3>
+              <p>{{ car.DESC | translate }}</p>
+            </div>
+          }
+        }
+
+      }
+
+    </div>
+  </div>
+</section>
+<!-- ===================== CTA RENT AUTO ===================== -->
+<section class="cta-auto">
+  <div class="container cta-box">
+    <h2>{{ 'RENT_AUTO.CTA_TITLE' | translate }}</h2>
+    <a class="btn-primary" routerLink="/contatti">{{ 'RENT_AUTO.CTA_BUTTON' | translate }}</a>
+  </div>
+</section>
+
+<router-outlet></router-outlet>

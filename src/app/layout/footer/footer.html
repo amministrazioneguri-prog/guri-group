@@ -1,0 +1,73 @@
+<div class="page-wrapper">
+
+  <!-- CONTENUTO PAGINA -->
+  <div class="page-content">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-inner">
+
+      <div class="footer-grid">
+
+        <!-- COMPANY -->
+        <div class="footer-col">
+          
+          <!-- LOGO -->
+          <div class="footer-logo">
+            <img [src]="'img/logo_guri.png'" alt="Guri Group Logo">
+          </div>
+
+          <p>
+            Azienda specializzata in servizi immobiliari, edilizia e mobilità.
+            Offriamo soluzioni professionali e affidabili.
+          </p>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="footer-col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a routerLink="/">Home</a></li>
+            <li><a routerLink="/chi-siamo">Chi Siamo</a></li>
+            <li><a routerLink="/edilizia">Edilizia</a></li>
+            <li><a routerLink="/immobiliare">Immobiliare</a></li>
+            <li><a routerLink="/rent-auto">Auto</a></li>
+            <li><a routerLink="/contatti">Contatti</a></li>
+          </ul>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="footer-col">
+          <h4>Servizi</h4>
+          <ul>
+            <li><a>Compravendita immobili</a></li>
+            <li><a>Costruzioni e ristrutturazioni</a></li>
+            <li><a>Noleggio auto</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <p>Email: amministrazioneguri@gmail.com</p>
+          <p>Email: guri.immobiliare@gmail.com</p>
+          <p>Tel: 0457622331</p>
+          <p>Tel: 340 8352362</p>
+          <p>Via fiume 44, Legnago, Vr, IT</p>
+          <p>via Venezia 8/A Castelnuovo del Garda, Vr, IT</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Guri Group. Tutti i diritti riservati.</p>
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>

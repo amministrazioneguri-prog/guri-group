@@ -1,0 +1,26 @@
+<div class="login-container">
+  <div class="login-box">
+    <!-- LOGO -->
+    <div class="logo">Guri Group</div>
+
+    <h2>Accesso Admin</h2>
+
+    <p class="sub">Area riservata amministrazione</p>
+
+    <!-- INPUT -->
+    <input
+      type="password"
+      placeholder="Inserisci password"
+      [(ngModel)]="password"
+      (keyup.enter)="login()"
+    />
+
+    <!-- BUTTON -->
+    <button (click)="login()">Accedi</button>
+
+    <!-- ERROR -->
+    @if (error) {
+      <p class="error">{{ error }}</p>
+    }
+  </div>
+</div>

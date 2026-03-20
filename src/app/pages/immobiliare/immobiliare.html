@@ -1,0 +1,100 @@
+<!-- HERO -->
+<section class="hero-immobiliare">
+  <div class="container">
+    <h1>{{ 'IMMOBILIARE.HERO_TITLE' | translate }}</h1>
+    <p>{{ 'IMMOBILIARE.HERO_DESC' | translate }}</p>
+    <a class="btn-primary" routerLink="/contatti">
+      {{ 'IMMOBILIARE.HERO_BUTTON' | translate }}
+    </a>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-immobiliare">
+  <div class="container stats-grid">
+    <div class="stat" *ngFor="let stat of stats">
+      <h3>{{ stat.VALUE }}</h3>
+      <p>{{ stat.LABEL }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIZI -->
+<section class="servizi-immobiliare section">
+  <div class="container">
+    <h2>{{ 'IMMOBILIARE.SERVICES_TITLE' | translate }}</h2>
+    <div class="servizi-grid">
+      <div class="servizio-card" *ngFor="let service of services">
+        <div class="img-wrapper">
+          <img [src]="service.IMG" [alt]="service.TITLE" />
+        </div>
+        <h3>{{ service.TITLE }}</h3>
+        <p>{{ service.DESC }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio-immobiliare section">
+  <div class="container">
+    <h2>{{ 'IMMOBILIARE.PORTFOLIO_TITLE' | translate }}</h2>
+    <div class="portfolio-grid">
+      @if (houses$ | async; as houses) {
+        <!-- FIREBASE -->
+        @if (houses.length > 0) {
+          @for (house of houses; track house) {
+            <div class="portfolio-card">
+              <div class="img-wrapper">
+                <img [src]="house.img" [alt]="house.title" />
+              </div>
+
+              <h3>{{ house.title }}</h3>
+              <p>{{ house.desc }}</p>
+
+              <!-- CTA SEMPLICE -->
+              <a class="btn-contact" [routerLink]="['/contatti']"> Contattaci </a>
+            </div>
+          }
+        }
+        @if (houses.length === 0) {
+          <!-- FALLBACK -->
+          @for (house of portfolio; track house) {
+            <div class="portfolio-card">
+              <div class="img-wrapper">
+                <img [src]="house.IMG" [alt]="house.TITLE" />
+              </div>
+
+              <h3>{{ house.TITLE }}</h3>
+              <p>{{ house.DESC }}</p>
+            </div>
+          }
+        }
+      }
+    </div>
+  </div>
+</section>
+
+<!-- VALORI -->
+<section class="valori-immobiliare section">
+  <div class="container">
+    <h2>{{ 'IMMOBILIARE.VALUES_TITLE' | translate }}</h2>
+    <div class="valori-grid">
+      <div class="valore" *ngFor="let val of values">
+        <div class="icon" [innerHTML]="val.ICON"></div>
+        <h3>{{ val.TITLE }}</h3>
+        <p>{{ val.DESC }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-immobiliare">
+  <div class="container cta-box">
+    <h2>{{ 'IMMOBILIARE.CTA_TITLE' | translate }}</h2>
+    <a class="btn-primary" routerLink="/contatti">
+      {{ 'IMMOBILIARE.CTA_BUTTON' | translate }}
+    </a>
+  </div>
+</section>

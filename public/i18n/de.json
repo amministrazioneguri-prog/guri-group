@@ -1,0 +1,300 @@
+{
+  "NAV": {
+    "HOME": "Startseite",
+    "ABOUT": "Über uns",
+    "REAL_ESTATE": "Immobilien",
+    "RENT": "Autovermietung",
+    "CONSTRUCTION": "Bau",
+    "CONTACT": "Kontakt"
+  },
+  "BUTTONS": {
+    "DISCOVER_SERVICES": "Dienstleistungen entdecken",
+    "CONTACT_US": "Kontaktieren Sie uns",
+    "LEARN_MORE": "Mehr erfahren"
+  },
+  "HERO": {
+    "TITLE": "Komplettlösungen für Bau, Immobilien und Mobilität",
+    "SUBTITLE": "Guri Group Impresa wurde offiziell im Jahr 2023 gegründet, verfügt jedoch über Erfahrung seit den frühen 2000er Jahren und bietet integrierte Dienstleistungen in den Bereichen Bau und Immobilien mit Professionalität, Qualität und maßgeschneiderten Lösungen."
+  },
+  "SERVICES": {
+    "TITLE": "Unsere Dienstleistungen",
+    "SUBTITLE": "Integrierte Lösungen für jede Anforderung.",
+    "IMMOBILIARE": {
+      "TITLE": "Immobilien",
+      "DESC": "Komplette Verwaltung von Bau, Renovierung und direktem Immobilienverkauf mit voller Qualitätskontrolle."
+    },
+    "RENT": {
+      "TITLE": "Autovermietung",
+      "DESC": "Flexible Autovermietung mit täglichen, wöchentlichen und monatlichen Optionen."
+    },
+    "CONSTRUCTION": {
+      "TITLE": "Bau",
+      "DESC": "Umfassende Bauleistungen mit schlüsselfertigen Lösungen."
+    }
+  },
+
+  "ABOUT": {
+    "HERO_TITLE": "Ein Unternehmen aufgebaut auf Erfahrung, Entwicklung und Vision",
+    "HERO_PARAGRAPH": "Guri Group Impresa wurde offiziell im Jahr 2023 gegründet, hat jedoch ihre Wurzeln in den frühen 2000er Jahren als Bauunternehmen.",
+
+    "INTRO_TITLE": "Entwicklung und Kompetenz",
+    "INTRO_PARAGRAPH1": "Im Laufe der Jahre hat das Unternehmen seine Kompetenzen in den Bereichen Bau, Anlagen und Fensterbau erweitert.",
+    "INTRO_PARAGRAPH2": "Das Unternehmen besteht aus spezialisierten Fachkräften, die jede Phase des Projekts von der technischen Planung bis zur Umsetzung begleiten.",
+
+    "STORY_TITLE": "Unsere Vision",
+    "STORY_PARAGRAPH1": "Die Gründung der Guri Group stellt einen Schritt in die Zukunft dar, mit dem Ziel, vollständige und professionelle Dienstleistungen anzubieten.",
+    "STORY_PARAGRAPH2": "Wir begleiten jedes Projekt in allen Phasen und gewährleisten Qualität, Koordination und zuverlässige Ergebnisse.",
+    "STORY_PARAGRAPH3": "Wir arbeiten in den Bereichen Bau, Immobilien und Mobilität mit einem praxisorientierten und kundenfokussierten Ansatz.",
+
+    "VALUES_TITLE": "Unsere Werte",
+    "VALUES_PARAGRAPH": "Die Prinzipien, die jede Tätigkeit der Guri Group leiten.",
+    "VALUES_PROFESSIONALITY": "Technische Kompetenz und Liebe zum Detail.",
+    "VALUES_RELIABILITY": "Zuverlässigkeit und Transparenz in jedem Projekt.",
+    "VALUES_QUALITY": "Hohe Standards und nachhaltige Ergebnisse.",
+
+    "CTA_TITLE": "Sprechen wir über Ihr Projekt",
+    "CTA_BUTTON": "Kontaktieren Sie uns"
+  },
+
+  "PROPERTIES": {
+    "TITLE": "Ausgewählte Immobilien",
+    "SUBTITLE": "Entdecken Sie einige der Immobilienangebote von Guri Group.",
+    "PROPERTY1": {
+      "TITLE": "Modernes Apartment",
+      "PLACE": "Mailand"
+    },
+    "PROPERTY2": {
+      "TITLE": "Freistehende Villa",
+      "PLACE": "Gardasee"
+    },
+    "PROPERTY3": {
+      "TITLE": "Renoviertes Haus",
+      "PLACE": "Verona"
+    }
+  },
+
+  "CARS": {
+    "TITLE": "Verfügbare Fahrzeuge",
+    "SUBTITLE": "Einige der Fahrzeuge unseres Mietservices.",
+    "CAR1": "BMW 3er",
+    "CAR2": "Audi A6",
+    "CAR3": "Mercedes C-Klasse"
+  },
+
+  "CTA": {
+    "TITLE": "Benötigen Sie weitere Informationen zu unseren Dienstleistungen?"
+  },
+
+  "CONTACT": {
+    "HERO_TITLE": "Kontakt – Guri Group",
+    "HERO_DESC": "Benötigen Sie Informationen zu unseren Dienstleistungen? Unser Team unterstützt Sie in jeder Phase Ihres Projekts.",
+    "HERO_BUTTON": "Anfrage senden",
+
+    "FORM_TITLE": "Informationen anfordern",
+    "FORM_FIELDS": {
+      "NAME": "Name",
+      "NAME_PLACEHOLDER": "Ihr Name",
+      "EMAIL": "E-Mail",
+      "EMAIL_PLACEHOLDER": "Ihre E-Mail",
+      "PHONE": "Telefon",
+      "PHONE_PLACEHOLDER": "Telefonnummer",
+
+      "SERVICE": "Gewünschte Dienstleistung",
+      "SERVICE_PLACEHOLDER": "Service auswählen",
+      "SERVICE_OPTIONS": {
+        "IMMOBILIARE": "Immobilien",
+        "EDILIZIA": "Bau",
+        "RENT_AUTO": "Autovermietung",
+        "ALTRO": "Sonstiges"
+      },
+
+      "REQUEST_TYPE": "Anfragetyp",
+      "REQUEST_OPTIONS": {
+        "INFO": "Information",
+        "QUOTE": "Angebot",
+        "APPOINTMENT": "Termin"
+      },
+
+      "MESSAGE": "Nachricht",
+      "MESSAGE_PLACEHOLDER": "Schreiben Sie hier Ihre Anfrage..."
+    },
+
+    "FORM_BUTTON": "Anfrage senden",
+    "FORM_SUCCESS": "Nachricht erfolgreich gesendet. Wir melden uns bald.",
+    "FORM_ERROR": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+
+    "INFO_TITLE": "Guri Group",
+    "INFO_DESC": "Professionelle Dienstleistungen in Bau, Immobilien und Mobilität.",
+    "INFO_EMAIL": "E-Mail",
+    "INFO_PHONE": "Telefon",
+    "INFO_ADDRESS": "Adresse",
+    "INFO_ADDRESS_AMMINISTRATIVE": "Verwaltungssitz",
+    "SERVICES_TITLE": "Unsere Dienstleistungen",
+    "SERVICES_LIST": [
+      "Immobiliendienstleistungen",
+      "Bau und Renovierungen",
+      "Autovermietung"
+    ]
+  },
+
+  "RENT_AUTO": {
+    "HERO_TITLE": "Guri Rent",
+    "HERO_DESC": "Flexibler Autovermietungsservice zur Deckung steigender Nachfrage.",
+    "HERO_BUTTON": "Auto buchen",
+
+    "SERVICES_TITLE": "Unsere Dienstleistungen",
+    "SERVICES_LIST": [
+      {
+        "TITLE": "Kurzzeitmiete",
+        "DESC": "Tägliche oder wöchentliche Miete."
+      },
+      {
+        "TITLE": "Langzeitmiete",
+        "DESC": "Flexible monatliche Lösungen."
+      },
+      {
+        "TITLE": "Premium-Fahrzeuge",
+        "DESC": "Zuverlässige und komfortable Autos."
+      }
+    ],
+
+    "PORTFOLIO_TITLE": "Verfügbare Fahrzeuge",
+    "PORTFOLIO_LIST": [
+      {
+        "TITLE": "Fahrzeug 1",
+        "DESC": "Kompaktes Stadtauto."
+      },
+      {
+        "TITLE": "Fahrzeug 2",
+        "DESC": "SUV für Reisen."
+      },
+      {
+        "TITLE": "Fahrzeug 3",
+        "DESC": "Premium-Fahrzeug."
+      }
+    ],
+
+    "CTA_TITLE": "Buchen Sie Ihr Auto noch heute",
+    "CTA_BUTTON": "Kontaktieren Sie uns"
+  },
+
+  "EDILIZIA": {
+    "HERO_TITLE": "Bau – Guri Group",
+    "HERO_DESC": "Komplette Bauleistungen von Anlagen bis zur finalen Umsetzung.",
+    "HERO_BUTTON": "Angebot anfordern",
+
+    "SERVICES_TITLE": "Unsere Dienstleistungen",
+    "SERVICES_LIST": {
+      "RISTRUTTURAZIONI": "Renovierungen",
+      "RISTRUTTURAZIONI_DESC": "Komplette Renovierungsarbeiten.",
+      "NUOVE_COSTRUZIONI": "Neubauten",
+      "NUOVE_COSTRUZIONI_DESC": "Errichtung neuer Gebäude.",
+      "MANUTENZIONE": "Wartung",
+      "MANUTENZIONE_DESC": "Ordentliche und außerordentliche Arbeiten."
+    },
+
+    "ABOUT_TITLE": "Komplettes Bauunternehmen",
+    "ABOUT_DESC1": "Guri Group bietet alles für einen vollständigen Bau-Service.",
+    "ABOUT_DESC2": "Lieferung, Installation und zertifizierte Prozesse garantiert.",
+
+    "PORTFOLIO_TITLE": "Aktuelle Projekte",
+    "PORTFOLIO_LIST": {
+      "PROGETTO1_TITLE": "Renovierung",
+      "PROGETTO1_DESC": "Komplettes Renovierungsprojekt.",
+      "PROGETTO2_TITLE": "Neubau",
+      "PROGETTO2_DESC": "Wohngebäude.",
+      "PROGETTO3_TITLE": "Sanierung",
+      "PROGETTO3_DESC": "Modernisierung bestehender Gebäude."
+    },
+
+    "CTA_TITLE": "Sprechen wir über Ihr Bauprojekt",
+    "CTA_BUTTON": "Kontaktieren Sie uns"
+  },
+
+  "IMMOBILIARE": {
+    "HERO_TITLE": "Guri Immobilien",
+    "HERO_DESC": "Komplette Verwaltung von Immobilienprojekten von Bau bis Verkauf.",
+    "HERO_BUTTON": "Informationen anfordern",
+
+    "STATS": [
+      { "VALUE": "+120", "LABEL": "Verwaltete Immobilien" },
+      { "VALUE": "98%", "LABEL": "Zufriedene Kunden" },
+      { "VALUE": "+10 Jahre", "LABEL": "Erfahrung" }
+    ],
+
+    "SERVICES_TITLE": "Unsere Dienstleistungen",
+    "SERVICES_LIST": [
+      {
+        "TITLE": "Verkauf",
+        "DESC": "Komplette Unterstützung beim Verkauf.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      },
+      {
+        "TITLE": "Vermietung",
+        "DESC": "Mietverwaltung.",
+        "IMG": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+      },
+      {
+        "TITLE": "Bewertungen",
+        "DESC": "Immobilienbewertungen.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      }
+    ],
+
+    "PORTFOLIO_TITLE": "Aktuelle Projekte",
+    "PORTFOLIO_LIST": [
+      {
+        "TITLE": "Projekt 1",
+        "DESC": "Renovierte Wohnungen.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      },
+      {
+        "TITLE": "Projekt 2",
+        "DESC": "Moderne Villen.",
+        "IMG": "https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg"
+      },
+      {
+        "TITLE": "Projekt 3",
+        "DESC": "Gewerbeflächen.",
+        "IMG": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg"
+      }
+    ],
+
+    "VALUES_TITLE": "Warum Guri Group wählen",
+    "VALUES_LIST": [
+      {
+        "TITLE": "Zuverlässigkeit",
+        "DESC": "Professionalität und Transparenz.",
+        "ICON": ""
+      },
+      {
+        "TITLE": "Erfahrung",
+        "DESC": "Branchenerfahrung.",
+        "ICON": ""
+      },
+      {
+        "TITLE": "Support",
+        "DESC": "Komplette Unterstützung.",
+        "ICON": ""
+      }
+    ],
+
+    "CTA_TITLE": "Sprechen wir über Ihr Immobilienprojekt",
+    "CTA_BUTTON": "Kontaktieren Sie uns"
+  },
+
+  "FOOTER": {
+    "COMPANY_TITLE": "Guri Group",
+    "COMPANY_DESC": "Unternehmen in den Bereichen Bau, Immobilien und Autovermietung.",
+    "SERVICES_TITLE": "Dienstleistungen",
+    "SERVICES_LIST": [
+      "Immobilien",
+      "Autovermietung",
+      "Bau"
+    ],
+    "CONTACT_TITLE": "Kontakt",
+    "CONTACT_EMAIL": "Email: info@gurigroup.it",
+    "CONTACT_PHONE": "Telefon: +39",
+    "COPYRIGHT": "© 2026 Guri Group Srl"
+  }
+}

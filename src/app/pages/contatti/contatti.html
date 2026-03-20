@@ -1,0 +1,164 @@
+<section class="hero-contatti">
+  <div class="container">
+    <h1>{{ 'CONTACT.HERO_TITLE' | translate }}</h1>
+    <p>{{ 'CONTACT.HERO_DESC' | translate }}</p>
+
+    <a class="btn-secondary" (click)="scrollToForm()">
+      {{ 'CONTACT.HERO_BUTTON' | translate }}
+    </a>
+  </div>
+</section>
+
+<section class="contact-section" #contactForm>
+  <h2>{{ 'CONTACT.FORM_TITLE' | translate }}</h2>
+
+  <div class="contact-grid">
+    <form class="contact-form" (ngSubmit)="sendEmail($event)">
+      <div class="form-row">
+        <div class="form-group">
+          <label>{{ 'CONTACT.FORM_FIELDS.NAME' | translate }}</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="{{ 'CONTACT.FORM_FIELDS.NAME_PLACEHOLDER' | translate }}"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label>{{ 'CONTACT.FORM_FIELDS.EMAIL' | translate }}</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="{{ 'CONTACT.FORM_FIELDS.EMAIL_PLACEHOLDER' | translate }}"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label>{{ 'CONTACT.FORM_FIELDS.PHONE' | translate }}</label>
+          <input
+            type="tel"
+            name="phone"
+            placeholder="{{ 'CONTACT.FORM_FIELDS.PHONE_PLACEHOLDER' | translate }}"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>{{ 'CONTACT.FORM_FIELDS.SERVICE' | translate }}</label>
+          <select name="service" required>
+            <option value="">{{ 'CONTACT.FORM_FIELDS.SERVICE_PLACEHOLDER' | translate }}</option>
+            <option value="immobiliare">
+              {{ 'CONTACT.FORM_FIELDS.SERVICE_OPTIONS.IMMOBILIARE' | translate }}
+            </option>
+            <option value="edilizia">
+              {{ 'CONTACT.FORM_FIELDS.SERVICE_OPTIONS.EDILIZIA' | translate }}
+            </option>
+            <option value="rent-auto">
+              {{ 'CONTACT.FORM_FIELDS.SERVICE_OPTIONS.RENT_AUTO' | translate }}
+            </option>
+            <option value="altro">
+              {{ 'CONTACT.FORM_FIELDS.SERVICE_OPTIONS.ALTRO' | translate }}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>{{ 'CONTACT.FORM_FIELDS.REQUEST_TYPE' | translate }}</label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="request" value="informazioni" checked />
+            {{ 'CONTACT.FORM_FIELDS.REQUEST_OPTIONS.INFO' | translate }}
+          </label>
+          <label>
+            <input type="radio" name="request" value="preventivo" />
+            {{ 'CONTACT.FORM_FIELDS.REQUEST_OPTIONS.QUOTE' | translate }}
+          </label>
+          <label>
+            <input type="radio" name="request" value="appuntamento" />
+            {{ 'CONTACT.FORM_FIELDS.REQUEST_OPTIONS.APPOINTMENT' | translate }}
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>{{ 'CONTACT.FORM_FIELDS.MESSAGE' | translate }}</label>
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="{{ 'CONTACT.FORM_FIELDS.MESSAGE_PLACEHOLDER' | translate }}"
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">
+        {{ 'CONTACT.FORM_BUTTON' | translate }}
+      </button>
+
+      <div *ngIf="formStatus === 'success'" class="form-alert success">
+        {{ 'CONTACT.FORM_SUCCESS' | translate }}
+      </div>
+
+      <div *ngIf="formStatus === 'error'" class="form-alert error">
+        {{ 'CONTACT.FORM_ERROR' | translate }}
+      </div>
+    </form>
+
+    <div class="contact-info">
+      <h3>{{ 'CONTACT.INFO_TITLE' | translate }}</h3>
+
+      <p>{{ 'CONTACT.INFO_DESC' | translate }}</p>
+
+      <div class="info-item">
+        <strong>{{ 'CONTACT.INFO_EMAIL' | translate }}</strong>
+        <span>amministrazioneguri@gmail.com</span>
+      </div>
+
+      <div class="info-item">
+        <strong>{{ 'CONTACT.INFO_EMAIL' | translate }}</strong>
+        <span>guri.immobiliare@gmail.com</span>
+      </div>
+
+      <div class="info-item">
+        <strong>{{ 'CONTACT.INFO_PHONE' | translate }}</strong>
+        <span>045 7622331</span>
+      </div>
+
+       <div class="info-item">
+        <strong>{{ 'CONTACT.INFO_PHONE' | translate }}</strong>
+        <span>340 8352362</span>
+      </div>
+
+      <div class="info-item">
+        <strong>{{ 'CONTACT.INFO_ADDRESS' | translate }}</strong>
+        <span>Via fiume 44, Legnago</span>
+      </div>
+
+      <div class="info-item">
+        <strong>{{ 'CONTACT.INFO_ADDRESS_AMMINISTRATIVE' | translate }}</strong>
+        <span>via Venezia 8/A Castelnuovo del Garda</span>
+      </div>
+
+      <div class="contact-services">
+        <h4>{{ 'CONTACT.SERVICES_TITLE' | translate }}</h4>
+
+        <ul>
+          <li
+            *ngFor="
+              let service of [
+                'CONTACT.SERVICES_LIST.0',
+                'CONTACT.SERVICES_LIST.1',
+                'CONTACT.SERVICES_LIST.2',
+              ]
+            "
+          >
+            {{ service | translate }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

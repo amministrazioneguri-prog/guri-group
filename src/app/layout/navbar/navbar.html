@@ -1,0 +1,63 @@
+<header class="navbar" [class.scrolled]="isScrolled">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <img [src]="'img/logo_guri.png'" alt="Guri Group Logo">
+    </div>
+
+    <nav class="menu">
+      <a routerLink="/">{{ 'NAV.HOME' | translate }}</a>
+      <a routerLink="/chi-siamo">{{ 'NAV.ABOUT' | translate }}</a>
+      <a routerLink="/immobiliare">{{ 'NAV.REAL_ESTATE' | translate }}</a>
+      <a routerLink="/rent-auto">{{ 'NAV.RENT' | translate }}</a>
+      <a routerLink="/edilizia">{{ 'NAV.CONSTRUCTION' | translate }}</a>
+      <a class="highlight" routerLink="/contatti">{{ 'NAV.CONTACT' | translate }}</a>
+
+      <div class="lang-switch desktop">
+        <img src="https://flagcdn.com/16x12/it.png" (click)="changeLang('it')" />
+        <img src="https://flagcdn.com/16x12/gb.png" (click)="changeLang('en')" />
+        <img src="https://flagcdn.com/16x12/de.png" (click)="changeLang('de')" />
+      </div>
+    </nav>
+
+    <!-- BURGER -->
+    <div class="hamburger" (click)="toggleMobileMenu()" [class.open]="mobileMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-- OVERLAY -->
+<div class="mobile-overlay" 
+     [class.open]="mobileMenuOpen" 
+     (click)="closeMobileMenu()">
+</div>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" [class.open]="mobileMenuOpen">
+
+  <div class="logo mobile-logo">
+    <img [src]="'img/logo_guri.png'" alt="Guri Group Logo">
+  </div>
+
+  <div class="lang-switch mobile">
+    <img src="https://flagcdn.com/16x12/it.png" (click)="changeLang('it')" />
+    <img src="https://flagcdn.com/16x12/gb.png" (click)="changeLang('en')" />
+    <img src="https://flagcdn.com/16x12/de.png" (click)="changeLang('de')" />
+  </div>
+
+  <a routerLink="/" (click)="closeMobileMenu()">{{ 'NAV.HOME' | translate }}</a>
+  <a routerLink="/chi-siamo" (click)="closeMobileMenu()">{{ 'NAV.ABOUT' | translate }}</a>
+  <a routerLink="/immobiliare" (click)="closeMobileMenu()">{{ 'NAV.REAL_ESTATE' | translate }}</a>
+  <a routerLink="/rent-auto" (click)="closeMobileMenu()">{{ 'NAV.RENT' | translate }}</a>
+  <a routerLink="/edilizia" (click)="closeMobileMenu()">{{ 'NAV.CONSTRUCTION' | translate }}</a>
+  <a class="highlight" routerLink="/contatti" (click)="closeMobileMenu()">
+    {{ 'NAV.CONTACT' | translate }}
+  </a>
+
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,289 @@
+/* ===================== BASE ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #475569;
+  scroll-behavior: smooth;
+}
+
+/* ===================== HERO ===================== */
+.hero-contatti {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-contatti::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/img/contatti.jpeg') center/cover no-repeat;
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+.hero-contatti::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(21, 79, 97, 0.65),
+    rgba(21, 79, 97, 0.85)
+  );
+  backdrop-filter: blur(4px);
+  z-index: 1;
+}
+
+.hero-contatti .container {
+  position: relative;
+  z-index: 2;
+  max-width: 750px;
+  padding: 0 20px;
+}
+
+.hero-contatti h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-contatti p {
+  font-size: clamp(16px, 1.2vw, 20px);
+  line-height: 1.7;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* ===================== BUTTON ===================== */
+.btn-primary,
+.btn-secondary {
+  background: linear-gradient(135deg, #ff9800, #ff6a00);
+  color: white;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 10px 30px rgba(255,152,0,0.25);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #ff6a00, #ff9800);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255,152,0,0.4);
+}
+
+/* ===================== CONTACT SECTION ===================== */
+.contact-section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 70px;
+  color: #154f61;
+  font-weight: 700;
+}
+
+/* ===================== GRID ===================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 60px;
+}
+
+/* ===================== FORM ===================== */
+.contact-form {
+  background: #ffffff;
+  padding: 45px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ROW */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+/* INPUT */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 15px;
+  transition: all 0.35s ease;
+  outline: none;
+  background: #fff;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #154f61;
+  box-shadow: 0 0 0 3px rgba(21, 79, 97, 0.12);
+}
+
+/* TEXTAREA */
+textarea {
+  resize: none;
+}
+
+/* RADIO */
+.radio-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.radio-group label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* BUTTON FORM */
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* ALERT */
+.form-alert {
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.form-alert.success {
+  background: #ecfdf5;
+  color: #065f46;
+}
+
+.form-alert.error {
+  background: #fef2f2;
+  color: #991b1b;
+}
+
+/* ===================== INFO ===================== */
+.contact-info {
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.contact-info h3 {
+  color: #154f61;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.contact-info p {
+  line-height: 1.6;
+}
+
+/* INFO ITEM */
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-item strong {
+  font-size: 13px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.info-item span {
+  font-size: 15px;
+  color: #0f172a;
+}
+
+/* SERVICES */
+.contact-services ul {
+  padding-left: 18px;
+}
+
+.contact-services li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* ===================== HOVER MICRO INTERACTION ===================== */
+.contact-form,
+.contact-info {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.contact-form:hover,
+.contact-info:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.08);
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-contatti h1 {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    padding: 30px;
+  }
+
+  .contact-info {
+    padding: 30px;
+  }
+}
