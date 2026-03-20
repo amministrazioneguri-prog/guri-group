@@ -9,4 +9,5 @@ export const environment = {
     appId: '1:124776785674:web:b41ee3140b9f158ea67cf3',
     measurementId: 'G-XQGLR57QKD',
   },
+  pssw_admin: "Guri-19-20-20"
 };
