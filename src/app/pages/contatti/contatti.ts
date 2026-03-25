@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
@@ -10,13 +10,39 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
   templateUrl: './contatti.html',
   styleUrl: './contatti.scss',
 })
-export class Contatti {
+export class Contatti implements AfterViewInit {
+
   @ViewChild('contactForm') contactForm!: ElementRef;
+
   constructor(private translate: TranslateService) {
     const lang = localStorage.getItem('lang') || 'it';
     this.translate.use(lang);
   }
+
   formStatus: 'success' | 'error' | null = null;
+
+  // ✅ attiva animazioni dopo render
+  ngAfterViewInit(): void {
+    this.initAnimations();
+  }
+
+  // ✅ animazioni scroll (senza librerie)
+  initAnimations() {
+    const elements = document.querySelectorAll('.animate');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach(el => observer.observe(el));
+  }
 
   scrollToForm() {
     this.contactForm.nativeElement.scrollIntoView({
@@ -40,7 +66,6 @@ export class Contatti {
       .then(
         (result: EmailJSResponseStatus) => {
           this.formStatus = 'success';
-
           (e.target as HTMLFormElement).reset();
         },
         (error) => {

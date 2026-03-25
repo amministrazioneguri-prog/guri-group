@@ -1,9 +1,8 @@
 import { AsyncPipe, CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { FirebaseService } from '../../services/firebase-service';
-import { Firestore } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -13,7 +12,7 @@ import { Observable } from 'rxjs';
   templateUrl: './rent-auto.html',
   styleUrl: './rent-auto.scss',
 })
-export class RentAuto implements OnInit {
+export class RentAuto implements OnInit, AfterViewInit {
 
   cars$!: Observable<any[]>;
 
@@ -29,11 +28,32 @@ export class RentAuto implements OnInit {
     this.cars$ = this.fb.getCars();
   }
 
+  ngAfterViewInit(): void {
+    this.initAnimations();
+  }
+
+  initAnimations() {
+    const elements = document.querySelectorAll('.animate');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach(el => observer.observe(el));
+  }
+
   rentAutoServices = [
     {
       TITLE: 'RENT_AUTO.SERVICES_LIST.0.TITLE',
       DESC: 'RENT_AUTO.SERVICES_LIST.0.DESC',
-      img: 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg',
+      img: 'img/rent1.jpeg',
     },
     {
       TITLE: 'RENT_AUTO.SERVICES_LIST.1.TITLE',
@@ -51,17 +71,17 @@ export class RentAuto implements OnInit {
     {
       TITLE: 'RENT_AUTO.PORTFOLIO_LIST.0.TITLE',
       DESC: 'RENT_AUTO.PORTFOLIO_LIST.0.DESC',
-      img: 'https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg',
+      img: '/img/rent1.jpeg',
     },
     {
       TITLE: 'RENT_AUTO.PORTFOLIO_LIST.1.TITLE',
       DESC: 'RENT_AUTO.PORTFOLIO_LIST.1.DESC',
-      img: 'https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg',
+      img: '/img/logo_1.png',
     },
     {
       TITLE: 'RENT_AUTO.PORTFOLIO_LIST.2.TITLE',
       DESC: 'RENT_AUTO.PORTFOLIO_LIST.2.DESC',
-      img: 'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg',
+      img: '/img/logo_2.png',
     },
   ];
 }

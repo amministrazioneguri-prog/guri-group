@@ -1,5 +1,5 @@
 /* RESET */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +15,16 @@ html {
 /* BODY */
 
 body {
-  font-family: 'Inter', sans-serif;
-  color: #0f172a;
+  font-family: "Open Sans", sans-serif;
   background: #ffffff;
   line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
 
 /* CONTAINER RIUTILIZZABILE */
@@ -31,11 +37,9 @@ body {
 
 /* SPAZIO NAVBAR FIXED */
 
-
 /* SECONDARY BUTTON */
 
 .btn-secondary {
-
   border: 1px solid white;
   padding: 12px 22px;
 
@@ -43,16 +47,12 @@ body {
 
   color: white;
   font-weight: 500;
-
 }
 
 .btn-secondary:hover {
-
   background: white;
   color: #07287e;
-
 }
-
 
 /* SEZIONI */
 
@@ -91,7 +91,9 @@ body {
 
 /* TITOLI PROFESSIONALI */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 600;
   letter-spacing: -0.5px;
 }
@@ -100,7 +102,7 @@ h1, h2, h3 {
 
 a {
   text-decoration: none;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 
 /* BUTTON BASE */
@@ -111,7 +113,7 @@ a {
   padding: 12px 22px;
   border-radius: 6px;
   font-weight: 500;
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 
 .btn-primary:hover {
@@ -120,19 +122,59 @@ a {
 }
 
 /* RESPONSIVE */
+/* ===================== ANIMAZIONI ON SCROLL ===================== */
 
+/* stato iniziale */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.9s ease;
+}
+
+/* quando visibile */
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ritardi per effetto sequenziale */
+.service-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.service-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.service-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.property-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.property-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.property-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.car-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.car-card:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.car-card:nth-child(3) {
+  transition-delay: 0.3s;
+}
 @media (max-width: 900px) {
-
   .section {
     padding: 80px 0;
   }
-
 }
 
 @media (max-width: 600px) {
-
   .section {
     padding: 60px 0;
   }
-
 }

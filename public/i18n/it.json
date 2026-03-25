@@ -32,30 +32,24 @@
       "DESC": "Servizi completi nel settore edilizio con soluzioni chiavi in mano."
     }
   },
-
   "ABOUT": {
     "HERO_TITLE": "Una realtà costruita su esperienza, evoluzione e visione",
     "HERO_PARAGRAPH": "La Guri Group Impresa, costituita ufficialmente nel 2023, affonda le proprie radici nei primi anni 2000 come impresa edile specializzata.",
-
     "INTRO_TITLE": "Evoluzione e competenza",
     "INTRO_PARAGRAPH1": "Nel corso degli anni l’azienda si è evoluta ampliando le proprie competenze nei settori impiantistico, serramentistico ed edilizio.",
     "INTRO_PARAGRAPH2": "L’impresa è composta da figure professionali specializzate in grado di gestire ogni fase del lavoro, dalla progettazione tecnica alla realizzazione finale.",
-
     "STORY_TITLE": "La nostra visione",
     "STORY_PARAGRAPH1": "La nascita della Guri Group rappresenta un passo verso il futuro con l’obiettivo di offrire servizi completi e professionali.",
     "STORY_PARAGRAPH2": "Seguiamo ogni progetto in tutte le sue fasi garantendo qualità, coordinamento e risultati affidabili.",
     "STORY_PARAGRAPH3": "Operiamo nei settori edilizio, immobiliare e mobilità con un approccio concreto e orientato al cliente.",
-
     "VALUES_TITLE": "I nostri valori",
     "VALUES_PARAGRAPH": "I principi che guidano ogni attività di Guri Group.",
     "VALUES_PROFESSIONALITY": "Competenza tecnica e attenzione ai dettagli.",
     "VALUES_RELIABILITY": "Affidabilità e trasparenza in ogni progetto.",
     "VALUES_QUALITY": "Standard elevati e risultati duraturi.",
-
     "CTA_TITLE": "Parliamo del tuo progetto",
     "CTA_BUTTON": "Contattaci"
   },
-
   "PROPERTIES": {
     "TITLE": "Immobili in evidenza",
     "SUBTITLE": "Scopri alcune delle opportunità immobiliari disponibili attraverso Guri Group.",
@@ -72,24 +66,20 @@
       "PLACE": "Verona"
     }
   },
-
   "CARS": {
     "TITLE": "Auto disponibili",
     "SUBTITLE": "Alcuni dei veicoli disponibili nel nostro servizio di noleggio auto.",
-    "CAR1": "BMW Serie 3",
+    "CAR1": "Porsche",
     "CAR2": "Audi A6",
     "CAR3": "Mercedes Classe C"
   },
-
   "CTA": {
     "TITLE": "Hai bisogno di maggiori informazioni sui nostri servizi?"
   },
-
   "CONTACT": {
     "HERO_TITLE": "Contattaci – Guri Group",
     "HERO_DESC": "Hai bisogno di informazioni sui nostri servizi? Il nostro team è a disposizione per supportarti in ogni fase del tuo progetto.",
     "HERO_BUTTON": "Invia una richiesta",
-
     "FORM_TITLE": "Richiedi informazioni",
     "FORM_FIELDS": {
       "NAME": "Nome",
@@ -98,7 +88,6 @@
       "EMAIL_PLACEHOLDER": "La tua email",
       "PHONE": "Telefono",
       "PHONE_PLACEHOLDER": "Numero di telefono",
-
       "SERVICE": "Servizio di interesse",
       "SERVICE_PLACEHOLDER": "Seleziona un servizio",
       "SERVICE_OPTIONS": {
@@ -107,29 +96,24 @@
         "RENT_AUTO": "Rent Auto",
         "ALTRO": "Altro"
       },
-
       "REQUEST_TYPE": "Tipo richiesta",
       "REQUEST_OPTIONS": {
         "INFO": "Informazioni",
         "QUOTE": "Preventivo",
         "APPOINTMENT": "Appuntamento"
       },
-
       "MESSAGE": "Messaggio",
       "MESSAGE_PLACEHOLDER": "Scrivi qui la tua richiesta..."
     },
-
     "FORM_BUTTON": "Invia richiesta",
     "FORM_SUCCESS": "Messaggio inviato con successo. Ti risponderemo presto.",
     "FORM_ERROR": "Si è verificato un errore. Riprova tra qualche minuto.",
-
     "INFO_TITLE": "Guri Group",
     "INFO_DESC": "Servizi professionali nei settori edilizio, immobiliare e noleggio auto.",
     "INFO_EMAIL": "Email",
     "INFO_PHONE": "Telefono",
     "INFO_ADDRESS": "Sede",
     "INFO_ADDRESS_AMMINISTRATIVE": "Sede amministrativa",
-
     "SERVICES_TITLE": "I nostri servizi",
     "SERVICES_LIST": [
       "Servizi immobiliari",
@@ -137,12 +121,10 @@
       "Noleggio auto"
     ]
   },
-
   "RENT_AUTO": {
     "HERO_TITLE": "Guri Rent",
     "HERO_DESC": "Servizio di noleggio auto flessibile nato dalla crescente richiesta del settore.",
     "HERO_BUTTON": "Prenota un'auto",
-
     "SERVICES_TITLE": "I nostri servizi",
     "SERVICES_LIST": [
       {
@@ -158,7 +140,6 @@
         "DESC": "Veicoli affidabili e confortevoli."
       }
     ],
-
     "PORTFOLIO_TITLE": "Veicoli disponibili",
     "PORTFOLIO_LIST": [
       {
@@ -174,16 +155,13 @@
         "DESC": "Auto premium."
       }
     ],
-
     "CTA_TITLE": "Prenota la tua auto oggi",
     "CTA_BUTTON": "Contattaci"
   },
-
   "EDILIZIA": {
     "HERO_TITLE": "Edilizia – Guri Group",
     "HERO_DESC": "Servizi completi nel settore edilizio, dagli impianti alla realizzazione finale.",
     "HERO_BUTTON": "Richiedi un preventivo",
-
     "SERVICES_TITLE": "I Nostri Servizi",
     "SERVICES_LIST": {
       "RISTRUTTURAZIONI": "Ristrutturazioni",
@@ -193,11 +171,9 @@
       "MANUTENZIONE": "Manutenzione",
       "MANUTENZIONE_DESC": "Interventi ordinari e straordinari."
     },
-
     "ABOUT_TITLE": "Impresa edile completa",
     "ABOUT_DESC1": "All’interno della Guri Group è presente tutto il necessario per un servizio completo.",
     "ABOUT_DESC2": "Fornitura, posa e certificazioni garantite.",
-
     "PORTFOLIO_TITLE": "Progetti Recenti",
     "PORTFOLIO_LIST": {
       "PROGETTO1_TITLE": "Ristrutturazione",
@@ -207,22 +183,27 @@
       "PROGETTO3_TITLE": "Riqualificazione",
       "PROGETTO3_DESC": "Intervento su edificio."
     },
-
     "CTA_TITLE": "Parliamo del tuo progetto edilizio",
     "CTA_BUTTON": "Contattaci"
   },
-
   "IMMOBILIARE": {
     "HERO_TITLE": "Guri Immobiliare",
     "HERO_DESC": "Gestione completa del processo immobiliare dalla costruzione alla vendita diretta.",
     "HERO_BUTTON": "Richiedi informazioni",
-
     "STATS": [
-      { "VALUE": "+120", "LABEL": "Immobili gestiti" },
-      { "VALUE": "98%", "LABEL": "Clienti soddisfatti" },
-      { "VALUE": "+10 anni", "LABEL": "Esperienza" }
+      {
+        "VALUE": "+120",
+        "LABEL": "Immobili gestiti"
+      },
+      {
+        "VALUE": "98%",
+        "LABEL": "Clienti soddisfatti"
+      },
+      {
+        "VALUE": "+10 anni",
+        "LABEL": "Esperienza"
+      }
     ],
-
     "SERVICES_TITLE": "I nostri servizi",
     "SERVICES_LIST": [
       {
@@ -241,7 +222,6 @@
         "IMG": "img/home3.jpeg"
       }
     ],
-
     "PORTFOLIO_TITLE": "Progetti recenti",
     "PORTFOLIO_LIST": [
       {
@@ -260,7 +240,6 @@
         "IMG": "img/edilizia3.jpeg"
       }
     ],
-
     "VALUES_TITLE": "Perché scegliere Guri Group",
     "VALUES_LIST": [
       {
@@ -279,11 +258,13 @@
         "ICON": ""
       }
     ],
-
+    "DESCRIPTION_TITLE": "Un approccio moderno al settore immobiliare",
+    "DESCRIPTION_P1": "Operiamo nel settore immobiliare con un approccio basato su trasparenza, strategia e risultati concreti. Ogni immobile viene analizzato nel dettaglio per valorizzarne al massimo il potenziale, garantendo soluzioni su misura per ogni cliente.",
+    "DESCRIPTION_P2": "Dalla fase di acquisizione fino alla vendita o locazione, seguiamo ogni passaggio con precisione e attenzione, offrendo supporto completo e una gestione professionale in ogni fase del processo.",
+    "DESCRIPTION_P3": "Il nostro obiettivo è creare valore reale, costruendo relazioni solide e durature. Per questo ci distinguiamo per affidabilità, velocità operativa e cura dei dettagli, elementi fondamentali in un mercato sempre più competitivo.",
     "CTA_TITLE": "Parliamo del tuo progetto immobiliare",
     "CTA_BUTTON": "Contattaci"
   },
-
   "FOOTER": {
     "COMPANY_TITLE": "Guri Group",
     "COMPANY_DESC": "Impresa operante nei settori edilizio, immobiliare e noleggio auto.",

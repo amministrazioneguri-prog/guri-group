@@ -28,8 +28,8 @@ export class Edilizia {
       { threshold: 0.2 },
     );
 
-    document
-      .querySelectorAll('.hero-edilizia, .servizio-card, .portfolio-card, .cta-edilizia, .approfondimento-edilizia')
-      .forEach((el) => observer.observe(el));
+    document.querySelectorAll('.animate').forEach((el) => {
+      observer.observe(el);
+    });
   }
 }

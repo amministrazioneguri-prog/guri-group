@@ -1,6 +1,6 @@
 <!-- ===================== HERO EDILIZIA ===================== -->
 <section class="hero-edilizia">
-  <div class="container">
+  <div class="container animate fade-in">
     <h1>{{ 'EDILIZIA.HERO_TITLE' | translate }}</h1>
     <p>{{ 'EDILIZIA.HERO_DESC' | translate }}</p>
     <a class="btn-primary" routerLink="/contatti">
@@ -9,13 +9,55 @@
   </div>
 </section>
 
+
+<!-- ===================== RISTRUTTURAZIONI (NUOVA SEZIONE) ===================== -->
+<section class="section ristrutturazioni-focus">
+  <div class="container">
+    <div class="info-row">
+
+      <div class="info-text animate fade-in">
+        <h2>Ristrutturazioni su misura, senza compromessi</h2>
+
+        <p>
+          Trasformiamo ogni immobile in uno spazio moderno, funzionale e ad alto valore.
+          Le nostre ristrutturazioni sono progettate per migliorare non solo l’estetica,
+          ma soprattutto la qualità della vita e l’efficienza dell’abitazione.
+        </p>
+
+        <p>
+          Dalla demolizione alla ricostruzione, seguiamo ogni fase con precisione:
+          impianti, finiture, isolamento termico e distribuzione degli spazi vengono
+          studiati per garantire il massimo risultato, rispettando tempi e budget.
+        </p>
+
+        <p>
+          Una ristrutturazione ben fatta non è una spesa, ma un investimento:
+          aumenta il valore dell’immobile, riduce i consumi energetici e migliora
+          il comfort abitativo in modo concreto.
+        </p>
+
+        <p>
+          Il nostro team combina esperienza tecnica e visione progettuale per offrire
+          soluzioni personalizzate, moderne e durature nel tempo.
+        </p>
+      </div>
+
+      <div class="info-image animate zoom-in">
+        <img src="img/edilizia1.jpeg" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- ===================== SERVIZI ===================== -->
 <section class="servizi-edilizia section">
   <div class="container">
-    <h2>{{ 'EDILIZIA.SERVICES_TITLE' | translate }}</h2>
+    <h2 class="animate fade-in">{{ 'EDILIZIA.SERVICES_TITLE' | translate }}</h2>
 
     <div class="servizi-grid">
-      <div class="servizio-card">
+      <div class="servizio-card animate slide-up">
         <div class="img-wrapper">
           <img [src]="'img/edilizia8.jpeg'" />
         </div>
@@ -25,7 +67,7 @@
         </div>
       </div>
 
-      <div class="servizio-card">
+      <div class="servizio-card animate slide-up">
         <div class="img-wrapper">
           <img [src]="'img/edilizia9.jpeg'" />
         </div>
@@ -35,7 +77,7 @@
         </div>
       </div>
 
-      <div class="servizio-card">
+      <div class="servizio-card animate slide-up">
         <div class="img-wrapper">
           <img [src]="'img/edilizia7.jpeg'" />
         </div>
@@ -52,12 +94,12 @@
 <section class="approfondimento-edilizia section">
   <div class="container">
     <div class="info-row">
-      <div class="info-text">
+      <div class="info-text animate fade-in">
         <h2>{{ 'EDILIZIA.ABOUT_TITLE' | translate }}</h2>
         <p>{{ 'EDILIZIA.ABOUT_DESC1' | translate }}</p>
         <p>{{ 'EDILIZIA.ABOUT_DESC2' | translate }}</p>
       </div>
-      <div class="info-image">
+      <div class="info-image animate zoom-in">
         <img [src]="'img/edilizia7.jpeg'" />
       </div>
     </div>
@@ -67,24 +109,24 @@
 <!-- ===================== PORTFOLIO ===================== -->
 <section class="portfolio-edilizia section">
   <div class="container">
-    <h2>{{ 'EDILIZIA.PORTFOLIO_TITLE' | translate }}</h2>
+    <h2 class="animate fade-in">{{ 'EDILIZIA.PORTFOLIO_TITLE' | translate }}</h2>
 
     <div class="portfolio-grid">
-      <div class="portfolio-card">
+      <div class="portfolio-card animate zoom-in">
         <img [src]="'img/edilizia5.jpeg'" />
         <div class="overlay">
           <h3>{{ 'EDILIZIA.PORTFOLIO_LIST.PROGETTO1_TITLE' | translate }}</h3>
         </div>
       </div>
 
-      <div class="portfolio-card">
+      <div class="portfolio-card animate zoom-in">
         <img [src]="'img/edilizia6.jpeg'" />
         <div class="overlay">
           <h3>{{ 'EDILIZIA.PORTFOLIO_LIST.PROGETTO2_TITLE' | translate }}</h3>
         </div>
       </div>
 
-      <div class="portfolio-card">
+      <div class="portfolio-card animate zoom-in">
         <img [src]="'img/edilizia4.jpeg'" />
         <div class="overlay">
           <h3>{{ 'EDILIZIA.PORTFOLIO_LIST.PROGETTO3_TITLE' | translate }}</h3>
@@ -97,29 +139,29 @@
 <!-- ===================== GALLERIA ===================== -->
 <section class="galleria-edilizia section">
   <div class="container">
-    <h2>Galleria Progetti</h2>
+    <h2 class="animate fade-in">Galleria Progetti</h2>
 
     <div class="galleria-grid">
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia1.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia10.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia2.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <video autoplay muted loop playsinline>
             <source src="img/edilizia_video2.mp4" />
@@ -127,43 +169,43 @@
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia3.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia11.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia4.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia5.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia12.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <img [src]="'img/edilizia13.jpeg'" />
         </div>
       </div>
 
-      <div class="galleria-card">
+      <div class="galleria-card animate zoom-in">
         <div class="media">
           <video autoplay muted loop playsinline>
             <source src="img/edilizia_video3.mp4" />
@@ -174,9 +216,10 @@
     </div>
   </div>
 </section>
+
 <!-- ===================== CTA ===================== -->
 <section class="cta-edilizia">
-  <div class="container">
+  <div class="container animate fade-in">
     <h2>{{ 'EDILIZIA.CTA_TITLE' | translate }}</h2>
     <a class="btn-primary" routerLink="/contatti">
       {{ 'EDILIZIA.CTA_BUTTON' | translate }}

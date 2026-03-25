@@ -69,7 +69,7 @@
   "CARS": {
     "TITLE": "Available cars",
     "SUBTITLE": "Some of the vehicles available in our rental service.",
-    "CAR1": "BMW 3 Series",
+    "CAR1": "Porsche",
     "CAR2": "Audi A6",
     "CAR3": "Mercedes C-Class"
   },
@@ -258,6 +258,10 @@
         "ICON": ""
       }
     ],
+    "DESCRIPTION_TITLE": "A modern approach to real estate",
+    "DESCRIPTION_P1": "We operate in the real estate sector with an approach based on transparency, strategy, and concrete results. Each property is carefully analyzed to maximize its potential, ensuring tailored solutions for every client.",
+    "DESCRIPTION_P2": "From acquisition to sale or rental, we manage every step with precision and attention, providing full support and professional management throughout the entire process.",
+    "DESCRIPTION_P3": "Our goal is to create real value by building strong and lasting relationships. We stand out for our reliability, operational speed, and attention to detail, key elements in an increasingly competitive market.",
     "CTA_TITLE": "Let’s talk about your real estate project",
     "CTA_BUTTON": "Contact us"
   },

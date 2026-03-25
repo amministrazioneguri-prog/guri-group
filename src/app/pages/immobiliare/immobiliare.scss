@@ -327,6 +327,17 @@ h2 {
   font-size: 14px;
 }
 
+.descrizione-immobiliare p {
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 16px;
+
+  b {
+    color: #000;
+    font-weight: 600;
+  }
+}
+
 /* ===================== CTA ===================== */
 .cta-immobiliare {
   padding: 100px 20px 120px;
@@ -357,5 +368,22 @@ h2 {
   .cta-box {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .editorial-block,
+  .editorial-block.reverse {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .content {
+    text-align: left !important;
   }
 }

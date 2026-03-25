@@ -16,6 +16,18 @@
   </div>
 </section>
 
+<!-- ================= TRUST BAR ================= -->
+<div class="trust-bar">
+  <div class="marquee-content">
+    <span>Qualità</span>
+    <span>Affidabilità</span>
+    <span>Innovazione</span>
+    <span>Esperienza</span>
+    <span>Precisione</span>
+    <span>Professionalità</span>
+  </div>
+</div>
+
 <section class="section services" #services>
   <div class="container">
     <div class="section-title">
@@ -26,7 +38,7 @@
     <div class="services-grid">
       <div class="service-card" routerLink="/immobiliare">
         <div class="service-icon">
-          <img [src]="'img/home-icon-silhouette.png'" alt="Immobiliare">
+          <img [src]="'img/home-icon-silhouette.png'" alt="Immobiliare" />
         </div>
         <h3>{{ 'SERVICES.IMMOBILIARE.TITLE' | translate }}</h3>
         <p>{{ 'SERVICES.IMMOBILIARE.DESC' | translate }}</p>
@@ -34,17 +46,15 @@
 
       <div class="service-card" routerLink="/edilizia">
         <div class="service-icon">
-          <img [src]="'img/crane.png'" alt="Edilizia">
+          <img [src]="'img/crane.png'" alt="Edilizia" />
         </div>
         <h3>{{ 'SERVICES.CONSTRUCTION.TITLE' | translate }}</h3>
         <p>{{ 'SERVICES.CONSTRUCTION.DESC' | translate }}</p>
       </div>
 
-
-      
       <div class="service-card" routerLink="/rent-auto">
         <div class="service-icon">
-          <img [src]="'img/sedan.png'" alt="Rent Auto">
+          <img [src]="'img/sedan.png'" alt="Rent Auto" />
         </div>
         <h3>{{ 'SERVICES.RENT.TITLE' | translate }}</h3>
         <p>{{ 'SERVICES.RENT.DESC' | translate }}</p>
@@ -53,10 +63,77 @@
   </div>
 </section>
 
+<!-- ================= HIGHLIGHTS ================= -->
+<section class="section highlights">
+  <div class="container highlights-grid">
+    <div class="highlight-card">
+      <h3>+10 anni</h3>
+      <p>Esperienza nel settore</p>
+    </div>
+
+    <div class="highlight-card">
+      <h3>100%</h3>
+      <p>Soddisfazione clienti</p>
+    </div>
+
+    <div class="highlight-card">
+      <h3>Rapido</h3>
+      <p>Tempi di risposta veloci</p>
+    </div>
+  </div>
+</section>
+
+<section class="section deep-editorial">
+  <div class="container">
+    <div class="editorial-title editoriale_title">
+      <h2>{{ 'EDILIZIA.ABOUT_TITLE' | translate }}</h2>
+      <p>{{ 'EDILIZIA.ABOUT_DESC1' | translate }}</p>
+    </div>
+
+    <div class="editorial-block editoriale_1">
+      <div class="line"></div>
+      <div class="content">
+        <h3>{{ 'SERVICES.CONSTRUCTION.TITLE' | translate }}</h3>
+
+        <p>{{ 'EDILIZIA.ABOUT_DESC2' | translate }}</p>
+        <p>{{ 'ABOUT.INTRO_PARAGRAPH1' | translate }}</p>
+
+        <ul>
+          <li>{{ 'EDILIZIA.SERVICES_LIST.RISTRUTTURAZIONI' | translate }}</li>
+          <li>{{ 'EDILIZIA.SERVICES_LIST.NUOVE_COSTRUZIONI' | translate }}</li>
+          <li>{{ 'EDILIZIA.SERVICES_LIST.MANUTENZIONE' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="editorial-block reverse editoriale_2">
+      <div class="line"></div>
+      <div class="content">
+        <h3>{{ 'ABOUT.STORY_TITLE' | translate }}</h3>
+
+        <p>{{ 'ABOUT.STORY_PARAGRAPH1' | translate }}</p>
+        <p>{{ 'ABOUT.STORY_PARAGRAPH2' | translate }}</p>
+        <p>{{ 'ABOUT.STORY_PARAGRAPH3' | translate }}</p>
+      </div>
+    </div>
+
+    <div class="editorial-block editoriale_3">
+      <div class="line"></div>
+      <div class="content">
+        <h3>{{ 'SERVICES.IMMOBILIARE.TITLE' | translate }}</h3>
+
+        <p>{{ 'IMMOBILIARE.DESCRIPTION_P1' | translate }}</p>
+        <p>{{ 'IMMOBILIARE.DESCRIPTION_P2' | translate }}</p>
+        <p>{{ 'IMMOBILIARE.DESCRIPTION_P3' | translate }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section about">
   <div class="container about-grid">
     <div class="about-image">
-      <img [src]="'img/home4.jpeg'" alt="Chi siamo">
+      <img [src]="'img/home4.jpeg'" alt="Chi siamo" />
     </div>
 
     <div class="about-text">
@@ -80,7 +157,7 @@
 
     <div class="property-grid">
       <div class="property-card">
-        <img [src]="'img/home1.jpeg'" alt="Appartamento">
+        <img [src]="'img/home1.jpeg'" alt="Appartamento" />
         <div class="property-info">
           <h3>{{ 'PROPERTIES.PROPERTY1.TITLE' | translate }}</h3>
           <p>{{ 'PROPERTIES.PROPERTY1.PLACE' | translate }}</p>
@@ -88,7 +165,7 @@
       </div>
 
       <div class="property-card">
-        <img [src]="'img/home2.jpeg'" alt="Villa">
+        <img [src]="'img/home2.jpeg'" alt="Villa" />
         <div class="property-info">
           <h3>{{ 'PROPERTIES.PROPERTY2.TITLE' | translate }}</h3>
           <p>{{ 'PROPERTIES.PROPERTY2.PLACE' | translate }}</p>
@@ -96,7 +173,7 @@
       </div>
 
       <div class="property-card">
-        <img [src]="'img/home3.jpeg'" alt="Casa">
+        <img [src]="'img/home3.jpeg'" alt="Casa" />
         <div class="property-info">
           <h3>{{ 'PROPERTIES.PROPERTY3.TITLE' | translate }}</h3>
           <p>{{ 'PROPERTIES.PROPERTY3.PLACE' | translate }}</p>
@@ -106,36 +183,12 @@
   </div>
 </section>
 
-<section class="section cars">
-  <div class="container">
-    <div class="section-title">
-      <h2>{{ 'CARS.TITLE' | translate }}</h2>
-      <p>{{ 'CARS.SUBTITLE' | translate }}</p>
-    </div>
-
-    <div class="car-grid">
-      <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="BMW Serie 3">
-        <h3>{{ 'CARS.CAR1' | translate }}</h3>
-      </div>
-
-      <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753" alt="Audi A6">
-        <h3>{{ 'CARS.CAR2' | translate }}</h3>
-      </div>
-
-      <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" alt="Mercedes Classe C">
-        <h3>{{ 'CARS.CAR3' | translate }}</h3>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="cta">
   <div class="container">
     <div class="cta-box">
       <h2>{{ 'CTA.TITLE' | translate }}</h2>
+      <p>Contattaci per una consulenza personalizzata</p>
+
       <a class="btn-primary" routerLink="/contatti">
         {{ 'BUTTONS.CONTACT_US' | translate }}
       </a>
